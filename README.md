@@ -11,5 +11,7 @@
 5. 다 되었다면 .ipynb확장자 파일을 만들고 오른쪽 상단에 kernel을 선택해주고 사용해본다. 잘 실행 된다면 이런 모습일거다.
 --- 
 ![poster](./img/venvsetting.png)
+이것은 .venv설정이 완료 되었을때 파일 구성도 이다.
 
+![poster](./img/complete.png)
 * 이러면 설정 완료다. 
