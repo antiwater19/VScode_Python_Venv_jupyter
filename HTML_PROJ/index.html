@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <script>
+        console.log('first page...log');
+    </script>
+    <style>
+        img {
+            border: 50px solid black
+        }
+
+        body {
+            background-color: skyblue;
+            color: blueviolet;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .funny {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .nanum-pen-script-regular {
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: wheat;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="nanum-pen-script-regular">
+        <h1>안녕하세요 다른 폰트의 글씨에요</h1>
+    </div>
+
+    test
+    <div>
+        div tag
+    </div>
+
+
+    <img src="it.png" width="600px" height="300px" alt="it">
+    <div class="funny">
+        <h1>
+            <p color="red">미국 주식 그만떨어지라고 사람이 죽는다고</p>
+        </h1>
+    </div>
+
+    <table border="10"> <!--border 값주면 두꺼워짐-->
+        <tr>
+            <td>번호</td>
+            <td>제목</td>
+            <td>작성자</td>
+            <td>작성일</td>
+            <td>조회수</td>
+        </tr>
+        <tr>
+            <td>no.1972</td>
+            <td>개쌘녀석들</td>
+            <td>심영</td>
+            <td>1972.09.30</td>
+            <td>1972</td>
+        </tr>
+        <tr>
+            <td>퉁퉁퉁</td>
+            <td>사후르</td>
+        </tr>
+    </table>
+
+    <h2><a href="test.html">- test page로 이동</a></h2>
+    <a href="test2.html">test2 page</a>
+
+    <a href="#p1">p1 <br>스크롤 하지않고 페이지 내부에서 특정위치로 이동시켜줌</a>
+    <a href="#test1">test1</a>
+
+    <h1>test</h1>
+    <h1>test</h1>
+    <h1>test</h1>
+    <h1>test</h1>
+    <h1>test</h1>
+    <h1>test</h1>
+    <h1>test</h1>
+
+    <form action="#" method="get">
+        type=text : <input type="text" name="username" value="tester"> <br>
+        type=password : <input type="password" name="pw"> <br>
+        type=checkbox : <input type="checkbox" name="chk" value="ok1">
+        <input type="checkbox" name="chk" value="ok2"><br>
+        type=radio : A<input type="radio" name="choice" value="A">
+        B<input type="radio" name="choice" value="B">
+        C<input type="radio" name="choice" value="C">
+        D<input type="radio" name="choice" value="D">
+        F<input type="radio" name="choice" value="F"> <br>
+        type=color : <input type="color" name="color"> <br>
+        type=datetime-local : <input type="datetime-local" name="localDatetime"><br>
+        type=date : <input type="date" name="date"><br>
+        type=time : <input type="time" name="time"><br>
+        type=month : <input type="month"><br>
+        type=week : <input type="week"> <br>
+        type=email : <input type="email" name="email"><br>
+        type=file : <input type="file" name="userPhoto"><br>
+        type=hidden : 화면에는 표현되지 않는다.
+        <input type="hidden" name="idx" value="1"> <br>
+        type=image : <input type="image" src="it.png" height="50"><br>
+        type=number : <input type="number" name="num"> <br>
+        type=range : <input type="range" name="age" min="0" , max="150"> <br>
+        type= tel : <input type="tel"> <br>
+        type=url : <input type="url" name="url"><br> <br> <br>
+        <input type="submit"> <input type="reset">
+    </form>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>회원가입 폼</legend>
+            <table>
+                <tr>
+                    <th><label for="userid">아이디</label></th>
+                    <td>
+                        <input type="text" id="userid" name="userid">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="pw">비밀번호</label></th>
+                    <td>
+                        <input type="password" id="pw" name="pw">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="로그인">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>회원가입 폼</legend>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="userid">아이디(email)</label></th>
+                    <td><input type="email" id="userid" name="userid"></td>
+                </tr>
+                <tr>
+                    <th><label for="pw">비밀번호</label></th>
+                    <td><input type="password" id="pw" name="pw"></td>
+                </tr>
+                <tr>
+                    <th><label for="username">이름</label></th>
+                    <td><input type="text" id="username" name="username"></td>
+                </tr>
+                <tr>
+                    <th><label for="userPhoto">사진</label></th>
+                    <td><input type="file" id="userPhoto" name="userPhoto"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="회원가입"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
