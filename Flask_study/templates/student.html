@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='default.css')}}">
+</head>
+
+<body>
+    <h1>학생 리스트</h1>
+    <hr>
+    <table border="1">
+
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+        </tr>
+
+        {% for s in data %}
+        <tr>
+            <th>{{ s['name'] }}</th>
+            <th>{{ s['age'] }}</th>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+
+</html>
